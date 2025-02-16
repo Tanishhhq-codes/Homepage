@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 import '../styles/Navbar.css';
 
 function Navbar() {
@@ -18,9 +19,10 @@ function Navbar() {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
-        <Link to="/" className="logo">
-          RescueWave
-        </Link>
+        <div className="nav-left">
+          <img src={logo} alt="RescueWave Logo" className="nav-logo" />
+          <span className="nav-brand">RescueWave</span>
+        </div>
         
         <button 
           className="mobile-menu-button"
@@ -33,8 +35,18 @@ function Navbar() {
 
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li><a href="#home">Home</a></li>
+          <li><a href="#disasters">Disasters</a></li>
+          <li><a href="#helpline">Emergency Helpline</a></li>
           <li><a href="#ask-ai">Ask AI</a></li>
+          <li><a href="#medical">Medical Guide</a></li>
         </ul>
+
+        <button 
+          className="sign-out-btn"
+          onClick={() => window.location.href = '#'}
+        >
+          Sign Out
+        </button>
       </div>
     </nav>
   );

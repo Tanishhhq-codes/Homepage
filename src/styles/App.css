@@ -28,6 +28,11 @@ body {
   flex-direction: column;
 }
 
+.content {
+  margin-top: 70px; /* Height of navbar */
+  flex: 1;
+}
+
 section {
   padding: 5rem 2rem;
 }
