@@ -1,58 +1,177 @@
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-              url('../assets/images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  color: var(--text-light);
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 0 2rem;
 }
 
 .hero-content {
-  max-width: 800px;
-  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
 
-.hero h1 {
-  font-size: 4rem;
+.hero-title {
+  font-size: 4.5rem;
+  line-height: 1.1;
   margin-bottom: 1.5rem;
-  font-weight: 700;
+  animation: slideUp 0.8s ease-out;
 }
 
-.hero p {
+.gradient-text {
+  background: linear-gradient(45deg, #0984e3, #00b894);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
+  color: #64748b;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+  animation: slideUp 0.8s ease-out 0.2s backwards;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  animation: slideUp 0.8s ease-out 0.4s backwards;
 }
 
-.primary-button, .secondary-button {
-  padding: 1rem 2rem;
-  border-radius: 50px;
+.primary-btn, .secondary-btn {
+  padding: 1rem 2.5rem;
   font-size: 1.1rem;
-  text-decoration: none;
-  transition: transform 0.3s ease;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.3s ease;
 }
 
-.primary-button {
-  background-color: var(--primary-color);
+.primary-btn {
+  background: linear-gradient(45deg, #0984e3, #00b894);
   color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(9, 132, 227, 0.3);
 }
 
-.secondary-button {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(9, 132, 227, 0.4);
 }
 
-.primary-button:hover, .secondary-button:hover {
-  transform: translateY(-3px);
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid #0984e3;
+  color: #0984e3;
+}
+
+.secondary-btn:hover {
+  background: rgba(9, 132, 227, 0.1);
+  transform: translateY(-2px);
+}
+
+.hero-stats {
+  display: flex;
+  gap: 4rem;
+  animation: slideUp 0.8s ease-out 0.6s backwards;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #0984e3, #00b894);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stat-label {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.animated-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.shape1 {
+  width: 400px;
+  height: 400px;
+  background: rgba(9, 132, 227, 0.2);
+  top: -100px;
+  right: -100px;
+  animation: float 8s ease-in-out infinite;
+}
+
+.shape2 {
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 184, 148, 0.2);
+  bottom: -50px;
+  left: -50px;
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+.shape3 {
+  width: 200px;
+  height: 200px;
+  background: rgba(9, 132, 227, 0.15);
+  top: 50%;
+  left: 50%;
+  animation: float 10s ease-in-out infinite;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-stats {
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 } 
