@@ -14,7 +14,8 @@ function Hero() {
           Your guide to natural disaster awareness and emergency response
         </p>
         <div className="hero-buttons">
-          <button className="primary-btn">Get Started</button>
+          <button className="hero-btn glass-btn">Explore Disasters</button>
+          <button className="hero-btn solid-btn">Ask AI</button>
         </div>
       </div>
     </section>
