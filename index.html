@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RescueWave - Natural Disaster Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">RescueWave</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#disasters">Disasters</a></li>
+                <li><a href="#helpline">Emergency Helpline</a></li>
+                <li><a href="#ask-ai">Ask AI</a></li>
+                <li><a href="#medical">Medical Guide</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to RescueWave</h1>
+            <p>Your guide to natural disaster awareness and emergency response</p>
+        </section>
+
+        <section id="disasters" class="disaster-grid">
+            <div class="disaster-card earthquake">
+                <video class="background-video" autoplay muted loop>
+                    <source src="videos/earthquake.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h2>Earthquake</h2>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+            <div class="disaster-card tsunami">
+                <video class="background-video" autoplay muted loop>
+                    <source src="videos/tsunami.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h2>Tsunami</h2>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+            <div class="disaster-card drought">
+                <video class="background-video" autoplay muted loop>
+                    <source src="videos/drought.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h2>Drought</h2>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+            <div class="disaster-card forest-fire">
+                <video class="background-video" autoplay muted loop>
+                    <source src="videos/forest-fire.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h2>Forest Fires</h2>
+                    <button class="learn-more">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="helpline" class="emergency-helpline">
+            <h2>Emergency Helplines</h2>
+            <div class="helpline-grid">
+                <div class="helpline-card">
+                    <h3>National Emergency</h3>
+                    <p class="phone">112</p>
+                </div>
+                <div class="helpline-card">
+                    <h3>Police</h3>
+                    <p class="phone">100</p>
+                </div>
+                <div class="helpline-card">
+                    <h3>Fire Brigade</h3>
+                    <p class="phone">101</p>
+                </div>
+                <div class="helpline-card">
+                    <h3>Ambulance</h3>
+                    <p class="phone">102</p>
+                </div>
+                <div class="helpline-card">
+                    <h3>Disaster Management</h3>
+                    <p class="phone">108</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ask-ai" class="ai-section">
+            <div class="mascot-container">
+                <img src="images/wavi-mascot.jpg" alt="Wavi the Wave" class="mascot">
+            </div>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot">
+                        Hi! I'm Wavi, your disaster awareness assistant. How can I help you today?
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Ask me anything about disasters...">
+                    <button id="sendMessage">Send</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="medical" class="medical-guide">
+            <h2>Medical Guide</h2>
+            <div class="medical-content">
+                <div class="first-aid">
+                    <h3>First Aid Kit Essentials</h3>
+                    <ul>
+                        <li>Bandages and gauze</li>
+                        <li>Antiseptic wipes</li>
+                        <li>Pain relievers</li>
+                        <li>Emergency blanket</li>
+                        <li>First aid manual</li>
+                    </ul>
+                </div>
+                <div class="emergency-meds">
+                    <h3>Emergency Medications</h3>
+                    <ul>
+                        <li>Antihistamines</li>
+                        <li>Antibiotics</li>
+                        <li>ORS packets</li>
+                        <li>Personal medications</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="share-experience">
+            <h2>Share Your Experience</h2>
+            <div class="experience-form">
+                <textarea id="experienceText" placeholder="Share your disaster-related experience..."></textarea>
+                <button id="submitExperience">Share Story</button>
+            </div>
+            <div class="experiences-list" id="experiencesList">
+                <!-- Experiences will be added here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>RescueWave</h3>
+                <p>Your guide to natural disaster awareness and emergency response</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#disasters">Disasters</a></li>
+                    <li><a href="#helpline">Emergency Helpline</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: info@rescuewave.com</p>
+                <p>Emergency: 112</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RescueWave. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
