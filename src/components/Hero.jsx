@@ -3,6 +3,14 @@ import heroImage from '../assets/hero-bg.jpg'; // Add your background image to a
 import '../styles/Hero.css';
 
 function Hero() {
+  const handleExploreClick = () => {
+    window.location.href = 'https://disaster-inky.vercel.app/';
+  };
+
+  const handleAskAIClick = () => {
+    document.getElementById('ask-ai').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <section className="hero">
       <div className="hero-overlay"></div>
@@ -14,8 +22,18 @@ function Hero() {
           Your guide to natural disaster awareness and emergency response
         </p>
         <div className="hero-buttons">
-          <button className="hero-btn glass-btn">Explore Disasters</button>
-          <button className="hero-btn solid-btn">Ask AI</button>
+          <button 
+            className="hero-btn glass-btn"
+            onClick={handleExploreClick}
+          >
+            Explore Disasters
+          </button>
+          <button 
+            className="hero-btn solid-btn"
+            onClick={handleAskAIClick}
+          >
+            Ask AI
+          </button>
         </div>
       </div>
     </section>
