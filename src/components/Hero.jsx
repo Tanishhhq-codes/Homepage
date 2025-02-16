@@ -16,20 +16,6 @@ function Hero() {
         <div className="hero-buttons">
           <button className="primary-btn">Get Started</button>
         </div>
-        <div className="hero-stats">
-          <div className="stat-item">
-            <span className="stat-number">24/7</span>
-            <span className="stat-label">Support</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">100+</span>
-            <span className="stat-label">Resources</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">50k+</span>
-            <span className="stat-label">Users Helped</span>
-          </div>
-        </div>
       </div>
     </section>
   );
