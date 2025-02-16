@@ -36,9 +36,7 @@ function Navbar() {
         <ul className={`nav-links ${isMobileMenuOpen ? 'active' : ''}`}>
           <li><a href="#home">Home</a></li>
           <li><a href="#disasters">Disasters</a></li>
-          <li><a href="#helpline">Emergency Helpline</a></li>
           <li><a href="#ask-ai">Ask AI</a></li>
-          <li><a href="#medical">Medical Guide</a></li>
         </ul>
 
         <button 
