@@ -20,6 +20,8 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--background-light);
+  position: relative;
+  min-height: 100vh;
 }
 
 .app {
@@ -29,7 +31,8 @@ body {
 }
 
 .content {
-  margin-top: 70px; /* Height of navbar */
+  margin-top: 0; /* Remove the previous top margin */
+  padding-top: 70px; /* Add padding instead */
   flex: 1;
 }
 
@@ -47,8 +50,9 @@ button {
 }
 
 /* Add smooth scrolling */
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Add animations */
