@@ -85,24 +85,6 @@
   width: 100%;
 }
 
-.sign-out-btn {
-  padding: 0.8rem 1.8rem;
-  background: linear-gradient(45deg, #0984e3, #00b894);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(9, 132, 227, 0.2);
-}
-
-.sign-out-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(9, 132, 227, 0.3);
-}
-
 .mobile-menu-button {
   display: none;
   flex-direction: column;
@@ -150,10 +132,5 @@
 
   .nav-brand {
     font-size: 1.4rem;
-  }
-
-  .sign-out-btn {
-    padding: 0.6rem 1.4rem;
-    font-size: 0.9rem;
   }
 } 

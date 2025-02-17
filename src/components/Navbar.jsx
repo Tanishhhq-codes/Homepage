@@ -38,13 +38,6 @@ function Navbar() {
           <li><a href="#disasters">Disasters</a></li>
           <li><a href="#ask-ai">Ask AI</a></li>
         </ul>
-
-        <button 
-          className="sign-out-btn"
-          onClick={() => window.location.href = '#'}
-        >
-          Sign Out
-        </button>
       </div>
     </nav>
   );
