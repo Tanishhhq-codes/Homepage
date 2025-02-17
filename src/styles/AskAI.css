@@ -204,4 +204,35 @@
   .mascot-image {
     width: 200px;
   }
+}
+
+.ai-attribution {
+  padding: 0.5rem 1rem;
+  background: #f5f7fa;
+  border-top: 1px solid #e4e9f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.attribution-text {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.learn-more-btn {
+  font-size: 0.75rem;
+  color: #0984e3;
+  background: none;
+  border: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  color: #0873c4;
 } 

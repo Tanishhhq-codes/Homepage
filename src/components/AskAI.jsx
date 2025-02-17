@@ -70,6 +70,10 @@ function AskAI() {
     setIsLoading(false);
   };
 
+  const handleLearnMore = () => {
+    window.location.href = 'https://ai.google.dev/';
+  };
+
   return (
     <section id="ask-ai" className="ai-section">
       <div className="mascot-container">
@@ -117,6 +121,13 @@ function AskAI() {
             className={`send-button ${isLoading ? 'loading' : ''}`}
           >
             {isLoading ? 'Processing...' : 'Send'}
+          </button>
+        </div>
+
+        <div className="ai-attribution">
+          <p className="attribution-text">Powered by Google Gemini AI</p>
+          <button onClick={handleLearnMore} className="learn-more-btn">
+            Learn More
           </button>
         </div>
       </div>
